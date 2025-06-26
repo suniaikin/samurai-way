@@ -42,3 +42,6 @@ document.write('<p>' + article2Content + '</p>');
 document.write('<p><strong>Author:</strong> ' + article2Author + '</p>');
 document.write('<p><strong>Published:</strong> ' + (is2Published ? "Yes" : "No") + '</p>');
 document.write('<p><strong>Featured:</strong> ' + (is2Featured ? "Yes" : "No") + '</p>');
+
+document.write('<hr/>');
+

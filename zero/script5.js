@@ -18,14 +18,20 @@ console.log(extractedGrade)*/
 
 // Массив названий книг в библиотеке
 
-let book1 = "Война и мир"
+/*let book1 = "Война и мир"
 let book2 = "Мастер и Маргарита"
-let book3 = "Преступление и наказание"
+let book3 = "Преступление и наказание"*/
 
-let books = ["Война и мир", "Мастер и Маргарита", "Преступление и наказание"]
+let books = [
+	"Война и мир",
+	"Война миров",
+	"Мастер и Маргарита",
+	"Преступление и наказание",
+]
 
-console.log(books[1])
+for (let i = 0; i < books.length; i++) {
+console.log(books[i])
+}
 
-const masterAndMargo = books[1] // "Мастер и Маргарита"
+console.log(result)
 
-console.log(masterAndMargo)

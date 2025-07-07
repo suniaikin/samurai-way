@@ -1,4 +1,20 @@
-const vocabulary = {
+const words = [
+	{
+		original: "привет",
+		translation: "hi"
+	},
+	{
+		original: "пока",
+		translation: "bye"
+	},
+	{
+		original: "да",
+		translation: "yes"
+	}
+]
+
+
+/*const words = {
 	words: {
 		word0: {
 			original: "Whats Up?",
@@ -14,7 +30,7 @@ const vocabulary = {
 		}
 	},
 	wordsCount: 3
-}
+}*/
 
 const notificationMessages = {
 	start: {
@@ -38,8 +54,8 @@ const result = {
 
 alert(notificationMessages.start.greeting)
 
-const userAnswer0 = prompt(vocabulary.words.word0.original) // 0
-if (userAnswer0 === vocabulary.words.word0.translation) {
+const userAnswer0 = prompt(words[0].original) // 0
+if (userAnswer0 === words[0].translation) {
 	result.correctAnswerCount++;
 	document.write("Correct!")
 } else {
@@ -47,8 +63,8 @@ if (userAnswer0 === vocabulary.words.word0.translation) {
 }
 document.write("<br>");
 
-const userAnswer1 = prompt(vocabulary.words.word1.original) // 0
-if (userAnswer1 === vocabulary.words.word1.translation) {
+const userAnswer1 = prompt(words[1].original) // 0
+if (userAnswer1 === words[1].translation) {
 	result.correctAnswerCount++;
 	document.write("Correct!")
 } else {
@@ -57,8 +73,8 @@ if (userAnswer1 === vocabulary.words.word1.translation) {
 document.write("<br>");
 
 
-const userAnswer2 = prompt(vocabulary.words.word2.original) // 0
-if (userAnswer2 === vocabulary.words.word2.translation) {
+const userAnswer2 = prompt(words[2].original) // 0
+if (userAnswer2 === words[2].translation) {
 	result.correctAnswerCount++;
 	document.write("Correct!")
 } else {
@@ -67,7 +83,7 @@ if (userAnswer2 === vocabulary.words.word2.translation) {
 
 const userCorrectAnswerPercent = 100
 
-if (result.correctAnswerCount / vocabulary.wordsCount * userCorrectAnswerPercent > settings.correctAnswersMinimumPercent) {
+if (result.correctAnswerCount / words.length * userCorrectAnswerPercent > settings.correctAnswersMinimumPercent) {
 	document.write("<br>", notificationMessages.result.finishSuccess)
 } else {
 	document.write("<br>", notificationMessages.result.finishUnsuccess)

@@ -1,0 +1,3 @@
+let persons = [
+{name: "Aнна",},{}
+]

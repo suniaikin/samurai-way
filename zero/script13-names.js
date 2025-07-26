@@ -1,15 +1,16 @@
 let people = [
 	{
-		name: "Aнна",
-		lastName: "Каренина",
+		name: "James",
+		lastName: "Wood",
 		age: 22
 	},
 	{
-		name: "Алексей",
-		lastName: "Каренин",
+		name: "Andrew",
+		lastName: "Rivers",
 		age: 32
 	}
 ]
+
 
 for (let i = 0; i < people.length; i++) {
 	let person = people[i];

@@ -13,7 +13,6 @@ let people = [
 
 
 for (let i = 0; i < people.length; i++) {
-	console.log(people[1].name, people[1].lastName);
 }
 
 
